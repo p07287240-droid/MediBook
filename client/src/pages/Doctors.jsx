@@ -30,7 +30,7 @@ function Doctors() {
   const [editingSlot, setEditingSlot] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/doctors").then(({ data }) => {
+    axios.get("https://medibook-backend-w776.onrender.com/api/doctors").then(({ data }) => {
       if (Array.isArray(data) && data.length) setDoctors([...data.map((doctor, i) => ({ ...fallbackDoctors[i % fallbackDoctors.length], ...doctor })), ...fallbackDoctors.filter((fallback) => !data.some((doctor) => doctor.specialization?.toLowerCase() === fallback.specialization.toLowerCase()))]);
     }).catch(() => {});
   }, []);
