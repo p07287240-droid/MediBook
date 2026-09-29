@@ -34,7 +34,7 @@ function Appointments() {
             <article className="appointment-panel" key={index}>
               <h2>{item.doctor}</h2>
               <p>
-                {item.specialization} � {item.slot} � {item.date}
+                {item.specialization}  {item.slot}  {item.date}
               </p>
             </article>
           ))}

@@ -6,7 +6,7 @@ function Navbar() {
       <div className="navbar-container">
         <Link to="/doctors" className="logo">
           <span className="logo-mark" aria-hidden="true">
-           "��y��y�
+          
           </span>
           MediBook
         </Link>

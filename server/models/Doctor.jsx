@@ -7,24 +7,20 @@ const doctorSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-
     specialization: {
       type: String,
       required: true,
       trim: true,
     },
-
     experience: {
       type: Number,
       required: true,
       min: 0,
     },
-
     availableSlots: {
       type: [String],
       default: [],
     },
-
     photoUrl: {
       type: String,
       default: "",
